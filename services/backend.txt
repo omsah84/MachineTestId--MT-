@@ -1,0 +1,12 @@
+User API :: Add controller with name “HandlingUnitsApiController”. 
+
+Use the below table to save “Handling Units”. 
+
+
+API Method name : “GetHandlingTypes” – use to fixed values like “Pallet”, “Box” etc to fill thedropdown in UI using API call. 
+
+API Method name : “Save” using post method. 
+API Method name : “Edit” using post method to edit record. 
+API Method name : “Delete” using post method to delete record. 
+API Method name: “Get” method to get single “Handling Unit”. 
+API Method name: “GetAll” method to get all “Handling Units”.
