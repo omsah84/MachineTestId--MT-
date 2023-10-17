@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import DataHeading from './DataHeading'
 
 export class HandlingUnits extends Component {
     render() {
@@ -56,34 +57,40 @@ export class HandlingUnits extends Component {
                                                         <input className='form-control' />
                                                     </div>
 
-                                                    <div className='col-3'>
-                                                        <br/>
-                                                        <input type='checkbox' className='m-1'/>
+                                                    <div className='col-2'>
+                                                        <br />
+                                                        <input type='checkbox' className='m-1' />
                                                         <label>Non-Stackable</label>
                                                     </div>
 
-                                                    <div className='col-3'>
-                                                        <label>Stact Qty</label>                                             
+                                                    <div className='col-4'>
+                                                        <label>Stact Qty</label>
                                                         <input className='form-control' />
                                                     </div>
                                                 </div>
                                             </div>
 
-                
-                                        <div className='card mt-3'>
-                                            <div className='text-end'>
-                                                <button className='btn btn-primary m- 2'>Cancel</button>
-                                                <button className='btn btn-primary m-2'>Save and Add New</button>
-                                                <button className='btn btn-primary m-2'>Save</button>
+
+                                            <div className='card mt-3'>
+                                                <div className='text-end'>
+                                                    <button className='btn btn-primary m- 2'>Cancel</button>
+                                                    <button className='btn btn-primary m-2'>Save and Add New</button>
+                                                    <button className='btn btn-primary m-2'>Save</button>
+                                                </div>
                                             </div>
-                                        </div>
                                         </form>
+                                        <div className='mt-4'>
+                                            <DataHeading />
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
+
                 </div>
+
 
             </>
         )
