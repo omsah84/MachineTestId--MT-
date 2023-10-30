@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function DataHeading() {
+export default function DataHeading(props) {
     return (
         <div>
             <div className='p-2 card'>
@@ -22,17 +22,20 @@ export default function DataHeading() {
                     </thead>
                     <tbody>
                         <tr className='text-center'>
-                            <td>Msdfgsdfgsdfgark</td>
-                            <td>Msdfgsdfgsdfgark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
+                            <td>{props.type}demo</td>
+                            <td>{props.qty}demo</td>
+                            <td>
+                                {/* {props.dimensions['L']+"X" + props.dimensions['W']+"X" +props.dimensions['H'] } */}
+                                demo
+                                </td>
+                            <td>{props.product}demo</td>
+                            <td>{props.productQty} demo</td>
+                            <td>{props.stackQty}demo</td>
+                            <td>{props.product}demo</td>
+                            <td>{props.product}demo</td>
+                            <td>{props.product}demo</td>
+                            <td>{props.product}demo</td>
+                            <td>{props.product}demo</td>
                         </tr>
                         
                     </tbody>

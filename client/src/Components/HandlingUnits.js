@@ -18,8 +18,8 @@ export default function DataHeadling() {
     const handleChange = (event) => {
         const name = event.target.name;
         const value = event.target.value;
-        setDimensions(values => ({...values, [name]: value}));
-      }
+        setDimensions(values => ({ ...values, [name]: value }));
+    }
 
 
     let cancel = () => {
@@ -38,7 +38,7 @@ export default function DataHeadling() {
     };
 
     let save = () => {
-       //use backend code
+        //use backend code
 
     };
 
@@ -61,7 +61,7 @@ export default function DataHeadling() {
                                             <div className='row m-2'>
                                                 <div className='col-3'>
                                                     <label>Type</label><br />
-                                                    <select name="type"  className='w-50' onChange={(e) => setType(e.target.value)}>
+                                                    <select name="type" className='w-50' onChange={(e) => setType(e.target.value)}>
                                                         <option value="volvo">Volvo</option>
                                                         <option value="saab">Saab</option>
                                                         <option value="fiat">Fiat</option>
@@ -76,20 +76,20 @@ export default function DataHeadling() {
                                                     <label>Dimensions(LxWxHxD)</label>
                                                     <div className='row'>
                                                         <div className='col-3'>
-                                                            <input className='form-control' type='number' name="L"  value={dimensions.L || ""} onChange={handleChange}/>
+                                                            <input className='form-control' type='number' name="L" value={dimensions.L || ""} onChange={handleChange} />
                                                         </div>
                                                         <div className='col-3'>
-                                                            <input className='form-control' type='number' name="W"  value={dimensions.W || ""} onChange={handleChange} />
+                                                            <input className='form-control' type='number' name="W" value={dimensions.W || ""} onChange={handleChange} />
                                                         </div>
                                                         <div className='col-3'>
-                                                            <input className='form-control' type='number' name="H"  value={dimensions.H || ""} onChange={handleChange} />
+                                                            <input className='form-control' type='number' name="H" value={dimensions.H || ""} onChange={handleChange} />
                                                         </div>
                                                         <div className='col-3 m-auto'>
-                                                            <select name="D" className='w-50'  onChange={handleChange}>
+                                                            <select name="D" className='w-50' onChange={handleChange}>
                                                                 <option value="inches" type="text"  >Inches</option>
                                                                 <option value="cm" type="text"  >cm</option>
                                                                 <option value="meter" type="text"  >meter</option>
-                                                            
+
                                                             </select>
                                                         </div>
                                                     </div>
@@ -138,7 +138,17 @@ export default function DataHeadling() {
 
                                     </form>
                                     <div className='mt-4'>
-                                        <Data />
+                                        {
+                                            <Data
+                                                type={type}
+                                                qty={qty}
+                                                dimensions={dimensions}
+                                                product={product}
+                                                productQty={productQty}
+                                                stackbable={stackbable}
+                                                stackQty={stackQty}
+                                            />
+                                        }
                                     </div>
                                 </div>
                             </div>
